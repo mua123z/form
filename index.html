@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="main.js"></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- form đăng nhập -->
+    <div class="all" id="all">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input">
+                <input type="password" class="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' id="lock"></i>
+                <i class='bx bx-hide' id="hide" style="display: none;"></i>
+                <i class='bx bx-show' id="show" style="display: none;"></i>
+            </div>
+            <div class="mk">
+                <label><input type="checkbox">Remember me</label>
+                <label><a href="#">Forgot password</a></label>
+            </div>
+            <button type="submit" class="login">Login</button>
+        </form>
+        <div class="dktk">
+            <p>Don't have an a accout? <a href="#" onclick="anHien('login')">Register</a></p>
+        </div>
+    </div>
+
+    <!-- form đăng kí -->
+    <div class="register" id="register" >
+        <form action="">
+            <h1>Register</h1>
+            <div class="input">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input">
+                <input type="password" class="password-dk" id="password-dk" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' id="lock-dk"></i>
+                <i class='bx bx-hide' id="hide-dk" style="display: none;"></i>
+                <i class='bx bx-show' id="show-dk" style="display: none;"></i>
+            </div>
+            <div class="input">
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required> 
+                <i class='bx bx-x' id="false" style="display: none;"></i>  
+                <i class='bx bx-check' id="true" style="display: none;"></i>         
+            </div>
+            <button type="submit" class="sub-register">Register</button>
+        </form>
+        <div class="dktk">
+            <p>You already have an account? <a href="#" onclick="anHien('register')">Login</a></p>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
